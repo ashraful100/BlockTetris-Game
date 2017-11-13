@@ -17,30 +17,22 @@ int main ()
         cin.ignore(1000, '\n');
         cout<<"Wrong Input!!  1) for Autommatic Player || 2) for User mood:";
         cin>>choise;
-
     }
 
     if (choise==1)
     {
         myIBoard myGameBoard;
         visualization show(&myGameBoard);
-
         AI_player playGame(&myGameBoard,&show);
-
         playGame.properPosition (&myGameBoard);
         show.display();
-
-
      }
 
     else if (choise==2)
-
     {
         myIBoard myGameBoard;
         visualization show(&myGameBoard);
         userInterface playGame(&myGameBoard);
         playGame.Play(&myGameBoard,&show);
-
-
     }
 }

@@ -1,5 +1,3 @@
-
-
 #ifndef MYDERIVEDCLASS_H
 #define MYDERIVEDCLASS_H
 
@@ -15,6 +13,7 @@ class myIBoard :public IBoard
 protected:
 
     int x=4,y=0; //cordinates
+
 public:
 
     myIBoard();

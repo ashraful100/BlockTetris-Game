@@ -44,12 +44,6 @@ void visualization::display()
 
             }
             if(j==21) cout<<endl;
-
         }
-
-
-       }
-
-
-
+    }
 }

@@ -3,14 +3,10 @@
 userInterface::userInterface(IBoard *obj)
 {
     obj->InitBoard();
-
-
 }
 
 void userInterface::Play(IBoard *obj, visualization *showBoard)
 {
-
-
     showBoard->display();
     cout<<"Move Left (a/A)                 Move Right(d/D)\n";
     cout<<"Rotate counter clockwise(k/K)   Rotate Clock wise(l/L)\n";
@@ -27,7 +23,6 @@ void userInterface::Play(IBoard *obj, visualization *showBoard)
             cin.ignore(1000, '\n');
             cout<<"Wrong Input!!! :";
             cin>>userInput;
-
         }
 
         switch (userInput)
@@ -64,7 +59,5 @@ void userInterface::Play(IBoard *obj, visualization *showBoard)
         cout<<"Move Left (a/A)                 Move Right(d/D)\n";
         cout<<"Rotate counter clockwise(k/K)   Rotate Clock wise(l/L)\n";
         cout<<"Release (x/X)\n";
-
-
     }
 }

@@ -8,7 +8,7 @@ class userInterface : public myIBoard
 {
 public:
     userInterface(IBoard *obj);
-    void Play (IBoard *obj, visualization *showBoard) ;
+    void Play (IBoard *obj, visualization *showBoard);
 };
 
 #endif // USERINTERFACE_H

@@ -17,17 +17,6 @@ public:
     void properPosition(IBoard * pBoard);
     void Play(IBoard * pBoard);
     int counter=0;
-
-
-
-
-
-
-
 };
-
-
-
-
 
 #endif // AI_PLAYER_H

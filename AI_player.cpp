@@ -8,8 +8,6 @@ using namespace std;
 AI_player::AI_player(IBoard *obj,visualization *obj1):pBoard(obj),show(obj1)
 {
 
-
-
 }
 //*******  pause time**********//
 void AI_player::systemPause () {
@@ -69,14 +67,9 @@ void AI_player::properPosition(IBoard *pBoard)
 
                 }
 
-
                 if(x==1) { b=y;a=x;ax[jj]=x;ay[jj]=y;}// save the value a,b,ay[jj],ax[jj]
 
                 if(b<y && x>1) {a=x;b=y;ax[jj]=x;ay[jj]=y; }//check which value of y has height number
-
-
-
-
             }
 
         }
@@ -106,11 +99,6 @@ void AI_player::properPosition(IBoard *pBoard)
 
         x=4,y=0,a=0,b=0; //re-set all values
     }
-
-
-
-
-
 }
 //***********Ai play and release fixed position************//
 void AI_player::Play(IBoard *pBoard)
